@@ -30,7 +30,7 @@ int main(int argc, char *argv[])
 {
     QApplication app(argc, argv);
     if (argc > 1) {
-        for (int i = 0; i < argc; ++i) {
+        for (int i = 1; i < argc; ++i) {
             qDebug() << convertToDateTime(QString(argv[i])) << "\n";
         }
     } else {
